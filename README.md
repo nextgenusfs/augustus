@@ -22,7 +22,7 @@ cd build
 cmake ..
 make
 ```
-At this point you should have a working version of bamtools v2.4.0.  Now clone this repository and build Augustus.
+At this point you should have a working version of bamtools v2.4.0, double check that inside the bamtools folder you now see a `bin`, `lib`, and `include` folders. Now clone this repository and build Augustus. Of course you need to specify the location of where you compiled bamtools to the BAMTOOLS variable.
 ```
 git clone https://github.com/nextgenusfs/augustus.git
 cd augustus
