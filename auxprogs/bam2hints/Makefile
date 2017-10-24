@@ -15,6 +15,8 @@ SOURCES = bam2hints.cc
 OBJECTS = $(SOURCES:.cc=.o)
 CFLAGS = -Wall -O0 -g -ggdb # -g -p
 
+echo "bam2hints building with Bamtools located at ${BAMTOOLS}"
+
 # Recipe(s)
 # $@: full target name of current target. 
 # $<: .c file of target. 
