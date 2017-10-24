@@ -1,6 +1,6 @@
 #	Makefile for filterBam
 #	
-# 	Created: 11-November-2011
+#	Created: 11-November-2011
 #	Last modified: 4-March-2012
 
 
@@ -14,7 +14,6 @@ LIBS = $(BAMTOOLS)/lib/libbamtools.a -lz
 CFLAGS = -std=c++0x
 VPATH = functions 
 INSTDIR = ../bin
-echo "filterBam building with Bamtools located at: ${BAMTOOLS}"
 
 all : $(PROGRAM) $(OBJECTS) CHECKBAM BIN
 

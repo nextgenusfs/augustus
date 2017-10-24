@@ -1,11 +1,11 @@
 #	Makefile corresponding to BAM2HINTS
 #	
-# 	NOTE:
+#	NOTE:
 #	a) "-g" option allows for debugging
 #	b) libbamtools.a and lz library are used during the linking process
 #
-# 	Created: 14-December-2011
-#	Last modified:  23-October-2017 by Jon Palmer
+#	Created: 14-December-2011
+#	Last modified:	23-October-2017 by Jon Palmer
 
 # Variable definition
 BAMTOOLS=/usr/local/bamtools
@@ -15,13 +15,11 @@ SOURCES = bam2hints.cc
 OBJECTS = $(SOURCES:.cc=.o)
 CFLAGS = -Wall -O0 -g -ggdb # -g -p
 
-echo "bam2hints building with Bamtools located at ${BAMTOOLS}"
-
 # Recipe(s)
 # $@: full target name of current target. 
 # $<: .c file of target. 
-bam2hints : $(OBJECTS) 
-	$(CXX) $(CFLAGS) -o $@ $(OBJECTS) $(LIBS) 
+bam2hints : $(OBJECTS)
+	$(CXX) $(CFLAGS) -o$@ $(OBJECTS) $(LIBS)
 	cp bam2hints ../../bin
 
 all:$(OBJECTS) # Compiles each foo.cc into foo.o
