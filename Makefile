@@ -6,7 +6,7 @@ include common.mk
 all:
 	mkdir -p bin
 	cd src && ${MAKE} CC=$(CC) CXX=$(CXX)
-	cd auxprogs && ${MAKE} CC=$(BAMTOOLS_CC) CXX=$(BAMTOOLS_CXX)
+	cd auxprogs && ${MAKE} CC=$(BAMTOOLS_CC) CXX=$(BAMTOOLS_CXX) BAMTOOLS=$(BAMTOOLS)
 
 clean:
 	cd src && ${MAKE} clean
