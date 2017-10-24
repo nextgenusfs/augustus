@@ -14,6 +14,7 @@ LIBS = $(BAMTOOLS)/lib/libbamtools.a -lz
 CFLAGS = -std=c++0x
 VPATH = functions 
 INSTDIR = ../bin
+echo "filterBam building with Bamtools located at: ${BAMTOOLS}"
 
 all : $(PROGRAM) $(OBJECTS) CHECKBAM BIN
 
